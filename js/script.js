@@ -19,6 +19,10 @@ $(document).ready(function(){
 
     if(number>1){
        score +=number;
+       if(score>=100){
+         alert("player1 won");
+         $("button").prop('disabled',true);
+       }
     }
     else{
        score=0;
@@ -26,6 +30,7 @@ $(document).ready(function(){
       $("button#rollbutton2").show();
       $("button#rollbutton").hide();
     }
+
     /*instance of player object*/
 var player1= new Player(number,score);
     $("ul#finalresults").text("you rolled"+" " +player1.numbers);
@@ -39,6 +44,10 @@ var player1= new Player(number,score);
 
     if(number2>1){
        score2 +=number2;
+       if(score2>=100){
+         alert("player1 won");
+         $("button").prop('disabled',true);
+       }
     }
     else{
        score2=0;
