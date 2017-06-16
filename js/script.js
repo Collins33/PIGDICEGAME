@@ -6,6 +6,7 @@ var Player=function(numbers,scores){
 }
 /*SCORE VARIABLE STARTING AT 0*/
 var score=0;
+var score2=0;
 $(document).ready(function(){
   $("form.gameform").submit(function(event){
     event.preventDefault();
@@ -34,20 +35,20 @@ var player1= new Player(number,score);
   /*click function for player2 roll*/
 
   $("button#rollbutton2").click(function(){
-    var number =Math.floor((Math.random() * 6) + 1);
+    var number2 =Math.floor((Math.random() * 6) + 1);
 
-    if(number>1){
-       score +=number;
+    if(number2>1){
+       score2 +=number2;
     }
     else{
-       score=0;
+       score2=0;
       alert("PLAYER 1 START");
       $("button#rollbutton").show();
       $("button#rollbutton2").hide();
 
     }
     /*instance of player object*/
-var player2= new Player(number,score);
+var player2= new Player(number2,score2);
     $("ul#finalresults2").text("you rolled"+" " +player2.numbers);
     $("ul#score2").text("your current score is"+" " +player2.scores);
 
