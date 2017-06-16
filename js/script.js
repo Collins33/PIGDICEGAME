@@ -1,8 +1,10 @@
+/*CONSTRUCTOR FOR THE PLAYER*/
 var Player=function(numbers,scores){
 
   this.numbers=numbers;
   this.scores=scores;
 }
+/*SCORE VARIABLE STARTING AT 0*/
 var score=0;
 $(document).ready(function(){
   $("form.gameform").submit(function(event){
@@ -23,11 +25,13 @@ $(document).ready(function(){
       $("button#rollbutton2").show();
       $("button#rollbutton").hide();
     }
+    /*instance of player object*/
 var player1= new Player(number,score);
     $("ul#finalresults").text("you rolled"+" " +player1.numbers);
     $("ul#score").text("your current score is"+" " +player1.scores);
 
   })
+  /*click function for player2 roll*/
 
   $("button#rollbutton2").click(function(){
     var number =Math.floor((Math.random() * 6) + 1);
@@ -42,10 +46,22 @@ var player1= new Player(number,score);
       $("button#rollbutton2").hide();
 
     }
+    /*instance of player object*/
 var player2= new Player(number,score);
     $("ul#finalresults2").text("you rolled"+" " +player2.numbers);
     $("ul#score2").text("your current score is"+" " +player2.scores);
 
   })
+  $("button#holdbutton").click(function(){
+    $("button#rollbutton2").show();
+    $("button#rollbutton").hide();
+
+  })
+  $("button#holdbutton2").click(function(){
+    $("button#rollbutton").show();
+    $("button#rollbutton2").hide();
+
+  })
+
 
 });
