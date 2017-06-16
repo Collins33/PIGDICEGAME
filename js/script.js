@@ -20,6 +20,8 @@ $(document).ready(function(){
     else{
        score=0;
       alert("PLAYER 2 START");
+      $("button#rollbutton2").show();
+      $("button#rollbutton").hide();
     }
 var player1= new Player(number,score);
     $("ul#finalresults").text("you rolled"+" " +player1.numbers);
@@ -36,6 +38,9 @@ var player1= new Player(number,score);
     else{
        score=0;
       alert("PLAYER 1 START");
+      $("button#rollbutton").show();
+      $("button#rollbutton2").hide();
+
     }
 var player2= new Player(number,score);
     $("ul#finalresults2").text("you rolled"+" " +player2.numbers);
