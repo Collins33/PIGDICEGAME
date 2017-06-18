@@ -35,6 +35,7 @@
 #rules {
   border-width: 5px;
   border-style: inset;
+  border-radius: 25px;
   padding: 30px;
   margin: 30px;
   font-size: 20px;
@@ -51,30 +52,38 @@
 }
 #gametime1{
   padding: 20px;
-  border-width: 5px;
+  border-width: 2px;
   border-style: inset;
-  margin: 10px;
+  margin: 4px;
+  border-radius: 25px;
+  background-color: white;
 
 }
 #gametime2{
   padding: 20px;
-  border-width: 5px;
+  border-width: 2px;
   border-style: inset;
-  margin: 10px;
+  margin: 4px;
+  border-radius: 25px;
+  background-color: white;
 
 }
 #gametime3{
   padding: 20px;
-  border-width: 5px;
+  border-width: 2px;
   border-style: inset;
-  margin: 10px;
+  margin: 4px;
+  border-radius: 25px;
+  background-color: white;
 
 }
 #gametime4{
   padding: 20px;
-  border-width: 5px;
+  border-width: 2px;
   border-style: inset;
-  margin: 10px;
+  margin: 4px;
+  border-radius: 25px;
+  background-color: white;
 
 }
 body{
@@ -83,4 +92,24 @@ body{
   background-repeat: repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+#finalresults{
+  font-size: 20px;
+  color: black;
+  font-family: monospace;
+}
+#score{
+  font-size: 20px;
+  color: black;
+  font-family: monospace;
+}
+#finalresults2{
+  font-size: 20px;
+  color: black;
+  font-family: monospace;
+}
+#score2{
+  font-size: 20px;
+  color: black;
+  font-family: monospace;
 }
