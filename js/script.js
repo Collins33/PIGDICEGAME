@@ -72,6 +72,12 @@ var player2= new Player(number2,score2);
     $("button#rollbutton2").hide();
 
   })
+  $("button#proceed").click(function(){
+    $("#play1").show();
+    $("#play2").show();
+})
+
+
 
 
 });

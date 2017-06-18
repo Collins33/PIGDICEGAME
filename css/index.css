@@ -1,3 +1,86 @@
-#rollbutton2{
+#rollbutton2 {
   display: none;
+}
+
+#header {
+  background-image: url("https://images8.alphacoders.com/502/thumb-1920-502396.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+#headertext {
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#headersubtext {
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#play1 {
+  display: none;
+}
+
+#play2 {
+  display: none;
+}
+
+#rules {
+  border-width: 5px;
+  border-style: inset;
+  padding: 30px;
+  margin: 30px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  background-image: url("https://images2.alphacoders.com/459/thumb-1920-459548.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#proceed{
+  background-color: grey;
+  font-size: 20px;
+  padding: 14px 40px;
+}
+#gametime1{
+  padding: 20px;
+  border-width: 5px;
+  border-style: inset;
+  margin: 10px;
+
+}
+#gametime2{
+  padding: 20px;
+  border-width: 5px;
+  border-style: inset;
+  margin: 10px;
+
+}
+#gametime3{
+  padding: 20px;
+  border-width: 5px;
+  border-style: inset;
+  margin: 10px;
+
+}
+#gametime4{
+  padding: 20px;
+  border-width: 5px;
+  border-style: inset;
+  margin: 10px;
+
+}
+body{
+  background-image: url("https://wallpaperscraft.com/image/triangle_inverted_black_white_92770_1920x1080.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }

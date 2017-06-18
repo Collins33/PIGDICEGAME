@@ -7,62 +7,74 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="js/jquery-3.2.1.js"></script>
   <script src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <title>PIGDICE</title>
 </head>
 
 <body>
-  <div></div>
-
-
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12" id="header">
+          <h1 id="headertext">PIGDICE</h1>
+          <h2 id="headersubtext">CREATED BY COLLINS NJAU</h2>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row" id="rules">
+      <div class="col-md-12">
+        <h1>HERE ARE THE RULES OF THE GAME</h1>
+        <ol>
+          <li>Each player gets a turn to play the game</li>
+          <li>The player rolls the dice by clicking the roll button</li>
+          <li>If he rolls any number between 2 and 6, he gets point equivalent<br> to the number rolled</li>
+          <li>If he rolls 1, he looses all his former points and his turn ends</li>
+          <li>If the player decides to hold, he keeps his points but his turn ends</li>
+          <li>The winner is the one that gets to 100 points first</li>
+          <li>Goodluck!!!!!!!!!!</li>
+
+        </ol>
+        <h2>IF YOU HAVE UNDERSTOOD THE RULES, YOU MAY</h2>
+        <button type="submit" class="btn" id="proceed">
+          PROCEED
+        </button>
+      </div>
+    </div>
+    <div class="row" id="play1">
+      <div class="col-md-6" id="gametime1">
         <h1>PLAYER1</h1>
-        <form class="gameform">
-          <div class="form-group">
-            <label>enter your name</label>
-            <input class="form-control" id="nameinfo" placeholder="name" type="text" />
-          </div>
-        </form>
+
         <button type="submit" class="btn" id="rollbutton">ROLL</button>
         <button type="submit" class="btn" id="holdbutton">HOLD</button>
       </div>
-      <div class="col-md-6"></div>
-      <div class="results">
-        <ul id="finalresults">
-        </ul>
-        <ul id="score">
-        </ul>
+      <div class="col-md-6" id="gametime2">
+        <div class="results">
+          <ul id="finalresults">
+          </ul>
+          <ul id="score">
+          </ul>
+        </div>
       </div>
     </div>
-
-
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row" id="play2">
+      <div class="col-md-6" id="gametime3">
         <h1>PLAYER2</h1>
-        <form class="gameform">
-          <div class="form-group">
-            <label>enter your name</label>
-            <input class="form-control" id="nameinfo" placeholder="name" type="text" />
-          </div>
-        </form>
         <button type="submit" class="btn" id="rollbutton2">ROLL</button>
         <button type="submit" class="btn" id="holdbutton2">HOLD</button>
       </div>
-      <div class="col-md-6"></div>
-      <div class="results">
-        <ul id="finalresults2">
-        </ul>
-        <ul id="score2">
-        </ul>
+      <div class="col-md-6" id="gametime4">
+        <div class="results">
+          <ul id="finalresults2">
+          </ul>
+          <ul id="score2">
+          </ul>
+        </div>
       </div>
-
-
-
     </div>
-
-
-
   </div>
 
 </body>
