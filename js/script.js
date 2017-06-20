@@ -8,11 +8,7 @@ var Player=function(numbers,scores){
 var score=0;
 var score2=0;
 $(document).ready(function(){
-  $("form.gameform").submit(function(event){
-    event.preventDefault();
-    /*var playername= $("input#nameinfo").val();*/
 
-  })
   /*click function for player1 roll*/
   $("button#rollbutton").click(function(){
     var number =Math.floor((Math.random() * 6) + 1);
@@ -75,6 +71,7 @@ var player2= new Player(number2,score2);
   $("button#proceed").click(function(){
     $("#play1").show();
     $("#play2").show();
+    window.scrollTo( 0, 1000 );
 })
 
 
